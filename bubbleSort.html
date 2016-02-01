@@ -1,0 +1,24 @@
+<html>
+<head>
+  <script>
+  function bSort(c){
+    var end = c.length-1
+    var swapped = true
+
+    while(swapped == true && end > 0){
+        swapped = false
+        for(var idx = 0; idx < end; idx ++){
+            if(c[idx] > c[idx+1]){
+                var temp = c[idx]
+                c[idx] = c[idx + 1]
+                c[idx+1] = temp
+                swapped = true
+            }
+        }
+        end = end - 1
+    }
+    console.log(c)
+  }
+  </script>
+</head>
+</html>
